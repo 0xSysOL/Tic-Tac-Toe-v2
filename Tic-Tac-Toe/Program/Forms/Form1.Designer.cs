@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lable_Turn = new System.Windows.Forms.Label();
-            this.Lable_PlayerName = new System.Windows.Forms.Label();
-            this.Lable_Result = new System.Windows.Forms.Label();
-            this.Lable_ShowResult = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Label_Turn = new System.Windows.Forms.Label();
+            this.Label_PlayerName = new System.Windows.Forms.Label();
+            this.Label_Result = new System.Windows.Forms.Label();
+            this.Label_ShowResult = new System.Windows.Forms.Label();
+            this.label_Restart = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Pic_cell_1 = new System.Windows.Forms.PictureBox();
@@ -56,66 +56,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pic_cell_7)).BeginInit();
             this.SuspendLayout();
             // 
-            // Lable_Turn
+            // Label_Turn
             // 
-            this.Lable_Turn.AutoSize = true;
-            this.Lable_Turn.BackColor = System.Drawing.SystemColors.ControlText;
-            this.Lable_Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lable_Turn.ForeColor = System.Drawing.Color.Yellow;
-            this.Lable_Turn.Location = new System.Drawing.Point(51, 111);
-            this.Lable_Turn.Name = "Lable_Turn";
-            this.Lable_Turn.Size = new System.Drawing.Size(88, 38);
-            this.Lable_Turn.TabIndex = 1;
-            this.Lable_Turn.Text = "Turn";
+            this.Label_Turn.AutoSize = true;
+            this.Label_Turn.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Label_Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Turn.ForeColor = System.Drawing.Color.Yellow;
+            this.Label_Turn.Location = new System.Drawing.Point(51, 111);
+            this.Label_Turn.Name = "Label_Turn";
+            this.Label_Turn.Size = new System.Drawing.Size(88, 38);
+            this.Label_Turn.TabIndex = 1;
+            this.Label_Turn.Text = "Turn";
             // 
-            // Lable_PlayerName
+            // Label_PlayerName
             // 
-            this.Lable_PlayerName.AutoSize = true;
-            this.Lable_PlayerName.BackColor = System.Drawing.SystemColors.ControlText;
-            this.Lable_PlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lable_PlayerName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lable_PlayerName.Location = new System.Drawing.Point(51, 162);
-            this.Lable_PlayerName.Name = "Lable_PlayerName";
-            this.Lable_PlayerName.Size = new System.Drawing.Size(145, 38);
-            this.Lable_PlayerName.TabIndex = 2;
-            this.Lable_PlayerName.Text = "Player 1";
+            this.Label_PlayerName.AutoSize = true;
+            this.Label_PlayerName.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Label_PlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PlayerName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Label_PlayerName.Location = new System.Drawing.Point(51, 162);
+            this.Label_PlayerName.Name = "Label_PlayerName";
+            this.Label_PlayerName.Size = new System.Drawing.Size(145, 38);
+            this.Label_PlayerName.TabIndex = 2;
+            this.Label_PlayerName.Text = "Player 1";
             // 
-            // Lable_Result
+            // Label_Result
             // 
-            this.Lable_Result.AutoSize = true;
-            this.Lable_Result.BackColor = System.Drawing.SystemColors.ControlText;
-            this.Lable_Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lable_Result.ForeColor = System.Drawing.Color.Yellow;
-            this.Lable_Result.Location = new System.Drawing.Point(51, 220);
-            this.Lable_Result.Name = "Lable_Result";
-            this.Lable_Result.Size = new System.Drawing.Size(126, 38);
-            this.Lable_Result.TabIndex = 3;
-            this.Lable_Result.Text = "Winner";
+            this.Label_Result.AutoSize = true;
+            this.Label_Result.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Label_Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Result.ForeColor = System.Drawing.Color.Yellow;
+            this.Label_Result.Location = new System.Drawing.Point(51, 220);
+            this.Label_Result.Name = "Label_Result";
+            this.Label_Result.Size = new System.Drawing.Size(126, 38);
+            this.Label_Result.TabIndex = 3;
+            this.Label_Result.Text = "Winner";
             // 
-            // Lable_ShowResult
+            // Label_ShowResult
             // 
-            this.Lable_ShowResult.AutoSize = true;
-            this.Lable_ShowResult.BackColor = System.Drawing.SystemColors.ControlText;
-            this.Lable_ShowResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lable_ShowResult.ForeColor = System.Drawing.Color.Lime;
-            this.Lable_ShowResult.Location = new System.Drawing.Point(51, 291);
-            this.Lable_ShowResult.Name = "Lable_ShowResult";
-            this.Lable_ShowResult.Size = new System.Drawing.Size(105, 38);
-            this.Lable_ShowResult.TabIndex = 4;
-            this.Lable_ShowResult.Text = "NULL";
+            this.Label_ShowResult.AutoSize = true;
+            this.Label_ShowResult.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Label_ShowResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ShowResult.ForeColor = System.Drawing.Color.Lime;
+            this.Label_ShowResult.Location = new System.Drawing.Point(51, 291);
+            this.Label_ShowResult.Name = "Label_ShowResult";
+            this.Label_ShowResult.Size = new System.Drawing.Size(105, 38);
+            this.Label_ShowResult.TabIndex = 4;
+            this.Label_ShowResult.Text = "NULL";
             // 
-            // label5
+            // label_Restart
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(51, 356);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 38);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Restart Game";
-            this.label5.Click += new System.EventHandler(this.Restart);
+            this.label_Restart.AutoSize = true;
+            this.label_Restart.BackColor = System.Drawing.SystemColors.ControlText;
+            this.label_Restart.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Restart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_Restart.Location = new System.Drawing.Point(51, 356);
+            this.label_Restart.Name = "label_Restart";
+            this.label_Restart.Size = new System.Drawing.Size(233, 38);
+            this.label_Restart.TabIndex = 5;
+            this.label_Restart.Text = "Restart Game";
+            this.label_Restart.Click += new System.EventHandler(this.Restart);
             // 
             // pictureBox1
             // 
@@ -283,11 +283,11 @@
             this.Controls.Add(this.Pic_cell_3);
             this.Controls.Add(this.Pic_cell_1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.Lable_ShowResult);
-            this.Controls.Add(this.Lable_Result);
-            this.Controls.Add(this.Lable_PlayerName);
-            this.Controls.Add(this.Lable_Turn);
+            this.Controls.Add(this.label_Restart);
+            this.Controls.Add(this.Label_ShowResult);
+            this.Controls.Add(this.Label_Result);
+            this.Controls.Add(this.Label_PlayerName);
+            this.Controls.Add(this.Label_Turn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form_TTT";
             this.Text = "Tic Tac Toe";
@@ -310,11 +310,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Lable_Turn;
-        private System.Windows.Forms.Label Lable_PlayerName;
-        private System.Windows.Forms.Label Lable_Result;
-        private System.Windows.Forms.Label Lable_ShowResult;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Label_Turn;
+        private System.Windows.Forms.Label Label_PlayerName;
+        private System.Windows.Forms.Label Label_Result;
+        private System.Windows.Forms.Label Label_ShowResult;
+        private System.Windows.Forms.Label label_Restart;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox Pic_cell_1;
         private System.Windows.Forms.PictureBox Pic_cell_3;

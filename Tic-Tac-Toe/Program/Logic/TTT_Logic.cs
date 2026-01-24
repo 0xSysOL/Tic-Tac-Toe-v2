@@ -18,7 +18,8 @@ namespace Tic_Tac_Toe
         private enum Row_1_coordinates { First_Row = 1, Last_Row = 3 };
         private enum Row_2_coordinates { First_Row = 4, Last_Row = 6 };
         private enum Row_3_coordinates { First_Row = 6, Last_Row = 9 };
-       static private byte IsMatrixFull;
+        static public byte IsMatrixFull  { get; set; }
+
         private TTT_Logic()
         {
             IsMatrixFull = 0;
@@ -116,7 +117,7 @@ namespace Tic_Tac_Toe
 
             return false;
         }
-       static public bool IsColumnsAndRows_Valid(char[,] Char_Matrix) 
+        static public bool IsColumnsAndRows_Valid(char[,] Char_Matrix) 
         {
             //Check Like this condition
             /* 

@@ -24,7 +24,7 @@ namespace Tic_Tac_Toe
        private PictureBox [,]PicBox_Matrix = new PictureBox[3, 3];
        private char[,] Char_Matrix = new char[3, 3];
        private bool Player_Role;
-       private bool IsGameOver;
+       private bool IsGameOver;                                   
 
 
         public void FillMatrix_PicBox(ref PictureBox[,] matrix)
@@ -57,19 +57,67 @@ namespace Tic_Tac_Toe
 
 
         }
-
-        public Form_TTT()
+       
+        private void Initial_Labels() 
         {
-            InitializeComponent();
+
+            Label_PlayerName.Text = "Player_1";
+            Label_ShowResult.Text = "NULL";
+            
+        }
+        private void Initial_Cells() 
+        {
+
+            Pic_cell_1.Image = Resources.question_mark_96;
+            Pic_cell_2.Image = Resources.question_mark_96;
+            Pic_cell_3.Image = Resources.question_mark_96;
+            Pic_cell_4.Image = Resources.question_mark_96;
+            Pic_cell_5.Image = Resources.question_mark_96;
+            Pic_cell_6.Image = Resources.question_mark_96;
+            Pic_cell_7.Image = Resources.question_mark_96;
+            Pic_cell_8.Image = Resources.question_mark_96;
+            Pic_cell_9.Image = Resources.question_mark_96;
+
+            Pic_cell_1.Tag = "1";
+            Pic_cell_2.Tag = "2";
+            Pic_cell_3.Tag = "3";
+            Pic_cell_4.Tag = "4";
+            Pic_cell_5.Tag = "5";
+            Pic_cell_6.Tag = "6";
+            Pic_cell_7.Tag = "7";
+            Pic_cell_8.Tag = "8";
+            Pic_cell_9.Tag = "9";
+            
+
+
+        }
+        private void Initial_Values() 
+        { 
+            //Player Player_1 = new Player();
+            //Player Player_2 = new Player();
+            //Player Current_Player = new Player();
+            //PictureBox[,] PicBox_Matrix = new PictureBox[3, 3];
+            //char[,] Char_Matrix = new char[3, 3];
+            
+            
+            Player_Role = true;
+            IsGameOver = false;
             FillMatrix_PicBox(ref PicBox_Matrix);
             FillMatrix_char(Char_Matrix);
+
             Player_1.IsFirstPlayer = true;
             Player_1.Name = "Player_1";
             Player_2.IsFirstPlayer = false;
             Player_2.Name = "Player_2";
+            TTT_Logic.IsMatrixFull = 0;
 
-            Player_Role = true;
-            IsGameOver = false;
+
+        }
+        public Form_TTT()
+        {   
+            InitializeComponent();
+            Initial_Values();
+            Initial_Cells();
         }
 
 
@@ -81,10 +129,22 @@ namespace Tic_Tac_Toe
         private void Restart(object sender, EventArgs e)
         {
 
-
-
+            Initial_Values();
+            Initial_Cells();
+            Initial_Labels();
         }
 
+
+        private bool _IsGameNotOver(string PlayerName) 
+        {
+
+            if (IsGameOver)
+            {
+                Label_ShowResult.Text = PlayerName;
+                return false;
+            }
+            return true;
+        }
         private void Clicked_On_Cell(object sender, EventArgs e)
         {
 
@@ -99,30 +159,35 @@ namespace Tic_Tac_Toe
 
             if (Player_Role)
             {
-                Current_Player = Player_1;
-                Lable_PlayerName.Text = Current_Player.Name;
+                
                 IsGameOver = TTT_Logic.Start_AndGetResultGame(picture_Cell, PicBox_Matrix,ref Char_Matrix, Current_Player);
-                Player_Role = false;
-                picture_Cell.Tag = "";
+                
+                
+                if (_IsGameNotOver(Current_Player.Name))
+                {
+                    Current_Player = Player_1;
+                    Label_PlayerName.Text = Current_Player.Name;
+                    Player_Role = false;
+                    picture_Cell.Tag = "";
+                }
+
             }
             else 
             {
-                Current_Player = Player_2;
-                Lable_PlayerName.Text = Current_Player.Name;
+                
                 IsGameOver =  TTT_Logic.Start_AndGetResultGame(picture_Cell, PicBox_Matrix,ref Char_Matrix, Current_Player);
-                Player_Role = true;
-                picture_Cell.Tag = "";
 
-
+                if (_IsGameNotOver(Current_Player.Name))
+                {
+                    Current_Player = Player_2;
+                    Label_PlayerName.Text = Current_Player.Name;
+                    Player_Role = true;
+                    picture_Cell.Tag = "";
+                }
             }
 
 
-            if (IsGameOver)
-            {
-                Lable_ShowResult.Text = Current_Player.Name;
-                return;
-            }
-            
+           
 
 
 
