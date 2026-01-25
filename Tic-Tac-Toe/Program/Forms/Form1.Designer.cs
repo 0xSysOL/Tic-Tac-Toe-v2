@@ -76,9 +76,9 @@
             this.Label_PlayerName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Label_PlayerName.Location = new System.Drawing.Point(51, 162);
             this.Label_PlayerName.Name = "Label_PlayerName";
-            this.Label_PlayerName.Size = new System.Drawing.Size(145, 38);
+            this.Label_PlayerName.Size = new System.Drawing.Size(154, 38);
             this.Label_PlayerName.TabIndex = 2;
-            this.Label_PlayerName.Text = "Player 1";
+            this.Label_PlayerName.Text = "Player_1";
             // 
             // Label_Result
             // 

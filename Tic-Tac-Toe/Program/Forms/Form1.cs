@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tic_Tac_Toe.Program.Main;
 using Tic_Tac_Toe.Properties;
-
+using System.Media;
+using Tic_Tac_Toe.Program.Logic;
 
 namespace Tic_Tac_Toe
 {
@@ -111,7 +112,10 @@ namespace Tic_Tac_Toe
             Player_2.Name = "Player_2";
             TTT_Logic.IsMatrixFull = 0;
 
-
+            Current_Player = Player_1;
+            Label_PlayerName.Text = Current_Player.Name;
+            Player_Role = false;
+            
         }
         public Form_TTT()
         {   
@@ -129,9 +133,11 @@ namespace Tic_Tac_Toe
         private void Restart(object sender, EventArgs e)
         {
 
+            SoundFunctions.PlayRestartSound();
             Initial_Values();
             Initial_Cells();
             Initial_Labels();
+            
         }
 
 
@@ -147,9 +153,9 @@ namespace Tic_Tac_Toe
         }
         private void Clicked_On_Cell(object sender, EventArgs e)
         {
+          SoundFunctions.ClickSound();
 
             PictureBox picture_Cell = (PictureBox)sender;
-
             if (picture_Cell.Tag.ToString() == "") return;
 
 
@@ -170,6 +176,8 @@ namespace Tic_Tac_Toe
                     Player_Role = false;
                     picture_Cell.Tag = "";
                 }
+                else
+                    SoundFunctions.PlayWinSound();
 
             }
             else 
@@ -184,6 +192,9 @@ namespace Tic_Tac_Toe
                     Player_Role = true;
                     picture_Cell.Tag = "";
                 }
+                else
+                    SoundFunctions.PlayWinSound();
+
             }
 
 

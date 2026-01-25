@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Tic_Tac_Toe.Program.Logic;
 using Tic_Tac_Toe.Program.Main;
 using Tic_Tac_Toe.Properties;
 
@@ -265,6 +266,7 @@ namespace Tic_Tac_Toe
             if (IsMatrixFull == 9)
             {
                 CurrentPlayer.Name = "No Winner";
+                SoundFunctions.PlayDrawSound();
                 return true;
             }
             

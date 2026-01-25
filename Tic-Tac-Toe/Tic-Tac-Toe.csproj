@@ -53,6 +53,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program\Logic\Player.cs" />
+    <Compile Include="Program\Logic\SoundFunctions.cs" />
     <Compile Include="Program\Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program\Logic\TTT_Logic.cs" />
