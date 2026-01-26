@@ -9,5 +9,5 @@
 
 
 - under development 2026/1/21
-- the project Complated 2026/1/26
+- the project Completed 2026/1/26
 
