@@ -8,4 +8,6 @@
  for that I begin baild edition 2 from struch
 
 
--- under development 2026/1/21
+- under development 2026/1/21
+- the project Complated 2026/1/26
+
